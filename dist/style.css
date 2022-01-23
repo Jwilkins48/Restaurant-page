@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Lobster&family=Sedgwick+Ave&display=swap');
+
+body {
+    background-color: #eb746e;
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+}
+
+#header {
+    text-align: center;
+    background-color: #e65c54;
+    display: grid;
+    height: 185px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#headerTitle {
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #36f068;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+#navBar {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 150px;
+    margin: 2px 15px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #e65c54;
+    color: #3dfd70;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+    font-size: 27px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+/* button hover */
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #3dfd70;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    
+}
+
+.btn:hover::after,
+.btn:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+
+}
+
+/* Scale from center */
+.btn::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.btn:hover::after,
+.btn:focus::after {
+    transform: scale(1);
+}
