@@ -43,6 +43,21 @@ body {
     padding: 0.2em 0;
 }
 
+.homeBtn{
+    width: 150px;
+    margin: 2px 15px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #e65c54;
+    color: #3dfd70;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+    font-size: 27px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    
+}
+
 /* button hover */
 .btn::after {
     content: '';
@@ -54,7 +69,7 @@ body {
     background-color: #3dfd70;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
-    
+
 }
 
 .btn:hover::after,
@@ -74,4 +89,39 @@ body {
 .btn:hover::after,
 .btn:focus::after {
     transform: scale(1);
+}
+
+/************************ Home Content ***************************/
+
+.homeHeading {
+    color: #8fb3fa;
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+/* slideshow start */
+.image {
+    width: 950px;
+    height: 535px;
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    -moz-border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    -webkit-border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    -o-border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    background-color: rgb(24, 24, 24);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12)
+    0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
 }

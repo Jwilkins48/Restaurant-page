@@ -7,5 +7,6 @@ load();
 
 function load() {
     loadPage();
+    loadHome();
 }
 

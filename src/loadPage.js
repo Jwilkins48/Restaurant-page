@@ -34,11 +34,21 @@ const createNav = () => {
     return navBar;
 };
 
+const createSection = (id) => {
+    const mainContent = document.createElement('main');
+    mainContent.setAttribute('id', id);
+    return mainContent;
+};
+
 function loadPage() {
     const pageContent = document.getElementById('content');
 
     const heading = createHeader()
     pageContent.appendChild(heading);
+
+    const sectionContent = createSection('sectionContent');
+    pageContent.appendChild(sectionContent);
+    
 };
 
 export default loadPage;
