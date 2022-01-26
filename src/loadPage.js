@@ -24,9 +24,11 @@ const createNav = () => {
     const navBar = document.createElement('nav');
     navBar.setAttribute('id', 'navBar');
 
+
     const homeBtn = createBtn('homeBtn', 'Home');
     const menuBtn = createBtn('menuBtn', 'Menu');
     const contactBtn = createBtn('contactBtn', 'Contact Us');
+
 
     navBar.appendChild(homeBtn);
     navBar.appendChild(menuBtn);
@@ -47,6 +49,7 @@ function loadPage() {
     pageContent.appendChild(heading);
 
     const sectionContent = createSection('sectionContent');
+    sectionContent.setAttribute('id', 'sectionContent');
     pageContent.appendChild(sectionContent);
     
 };

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Lobster&family=Sedgwick+Ave&display=swap');
+body {
+    /* background-color: #eb746e; */
+    background-image: url('imgs/lolipop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+}
+
+#header {
+    text-align: center;
+    background-color: #e96d67;
+    display: flex;
+    justify-content: space-around;
+    height: 125px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#headerTitle {
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #36f068;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+#navBar {
+    display: flex;
+    height: 60px;
+    margin: auto 0;
+}
+
+.btn {
+    width: 150px;
+    margin: 2px 15px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #e65c54;
+    color: #3dfd70;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+    font-size: 27px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+
+/* button hover */
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #3dfd70;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+
+}
+
+.btn:hover::after,
+.btn:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+
+}
+
+/* Scale from center */
+.btn::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.btn:hover::after,
+.btn:focus::after {
+    transform: scale(1);
+}
+
+/************************ Home Content ***************************/
+
+.homeHeading {
+    color: #404742;
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.image {
+
+    width: 38%;
+    height: 35%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    -moz-border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    -webkit-border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    -o-border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    border-image: url(imgs/colorful.jpg) 306 250 376 459 repeat repeat;
+    background-color: rgb(24, 24, 24);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+// Order Now button
+.homeBtn {
+    font-family: 'Dongle', sans-serif;
+    font-weight:300;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+	background: none;
+	border: none;
+	position: relative;
+	width: 8.5rem;
+	height: 3rem;
+	&:hover {
+		.btnContent {
+			opacity: 0;
+		}
+		.left {
+			border-top-left-radius: 1.5rem;
+			border-bottom-left-radius: 1.5rem;
+			border-top-right-radius: 0.5rem;
+			transform: rotate(45deg);
+			top: 0.75rem;
+			left: 0.5rem;
+		}
+		.right {
+			border-top-right-radius: 1.5rem;
+			border-bottom-right-radius: 1.5rem;
+			border-top-left-radius: 0.5rem;
+			transform: rotate(-45deg);
+			top: 0.75rem;
+			right: 0.5rem;
+		}
+	}
+}
+
+.left,
+.right,
+.btnContent {
+	transition: 0.25s ease-in-out all;
+	cursor: pointer;
+}
+
+.left {
+	background: #e65c54;
+	position: absolute;
+	left: 0;
+	right: 50%;
+	top: 0;
+	bottom: 0;
+	z-index: 50;
+	transform-origin: bottom right;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+
+.right {
+	background: #e65c54;
+	position: absolute;
+	right: 0;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	z-index: 50;
+	transform-origin: bottom left;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.btnContent {
+	color: #b8e4c4;
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bolder;
+}
+
+
+/************************ Menu Content ***************************/
