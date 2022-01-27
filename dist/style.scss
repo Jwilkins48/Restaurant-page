@@ -207,3 +207,19 @@ body {
 
 
 /************************ Menu Content ***************************/
+.menuContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    height: 860px;
+    width: 850px;
+    margin: auto;
+    opacity: .7;
+    background-image: url('imgs/yellow-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}

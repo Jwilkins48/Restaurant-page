@@ -6,16 +6,15 @@ import  loadMenu  from './menu';
 load();
 
 const changePage = () => {
-    const home = document.getElementById('homeBtn');
+    const home = document.getElementById('homeNavBtn');
     const menu = document.getElementById('menuBtn');
     const contact = document.getElementById('contactBtn');
 
     const order = document.getElementById('homeHeartBtn');
+    order.addEventListener('click', loadMenu);
 
     home.addEventListener('click', loadHome);
     menu.addEventListener('click', loadMenu);
-
-    order.addEventListener('click', loadMenu);
 }
 
 function load() {

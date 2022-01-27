@@ -25,7 +25,7 @@ const createNav = () => {
     navBar.setAttribute('id', 'navBar');
 
 
-    const homeBtn = createBtn('homeBtn', 'Home');
+    const homeBtn = createBtn('homeNavBtn', 'Home');
     const menuBtn = createBtn('menuBtn', 'Menu');
     const contactBtn = createBtn('contactBtn', 'Contact Us');
 
