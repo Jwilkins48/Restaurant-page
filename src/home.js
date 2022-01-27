@@ -37,9 +37,10 @@ const createHomePage = () => {
     home.appendChild(homeImg);
 
     home.appendChild(contentContainer);
-    
+
+    // Create home heart button
     const homeBtn = createBtn('homeHeartBtn');
-    // homeBtn.addEventListener('click', '')
+
 
     contentContainer.appendChild(homeBtn);
     const left = document.createElement('div');
