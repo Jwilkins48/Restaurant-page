@@ -15,6 +15,7 @@ const changePage = () => {
 
     home.addEventListener('click', loadHome);
     menu.addEventListener('click', loadMenu);
+    contact.addEventListener('click', loadContact);
 }
 
 function load() {

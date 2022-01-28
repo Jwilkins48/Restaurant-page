@@ -86,7 +86,7 @@ const createMenuPage = () => {
     item5Div.appendChild(icon5);
     menuContainer.appendChild(item5Div);
 
-    const item5 = CreateItemContent("Gelato", 'Deliciously smooth Gelato that comes in 6 different flavors');
+    const item5 = CreateItemContent("Giorno Gelato", 'Deliciously smooth Gelato that comes in 6 different flavors');
     item5Div.appendChild(item5);
 
     // Menu item six
@@ -97,6 +97,7 @@ const createMenuPage = () => {
 
     const item6 = CreateItemContent("Hailey's Heart Cake", 'Delicate layers of golden butter cake, filled with vanilla cream cheese and fresh strawberries');
     item6Div.appendChild(item6);
+
 
     return menu;
 }

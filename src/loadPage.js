@@ -49,6 +49,7 @@ function loadPage() {
     pageContent.appendChild(heading);
 
     const sectionContent = createSection('sectionContent');
+    sectionContent.innerHTML = '';
     sectionContent.setAttribute('id', 'sectionContent');
     pageContent.appendChild(sectionContent);
     

@@ -257,3 +257,21 @@ body {
     font-size: 17px;
     width: 250px;
 }
+
+/************************ Contact Content ***************************/
+.contactSection{
+    display: flex;
+    height: 90vh;
+}
+.contactContainer{
+    background-color: #56f781;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 950px;
+    margin: auto;
+    opacity: .7;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
