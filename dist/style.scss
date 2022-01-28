@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Lobster&family=Sedgwick+Ave&display=swap');
+
 body {
     /* background-color: #eb746e; */
     background-image: url('imgs/lolipop.jpg');
@@ -123,91 +124,95 @@ body {
     justify-content: center;
     margin-top: 10px;
 }
+
 // Order Now button
 .homeBtn {
     font-family: 'Dongle', sans-serif;
-    font-weight:300;
+    font-weight: 300;
     font-size: 28px;
     letter-spacing: 1px;
     margin-top: 15px;
-	background: none;
-	border: none;
-	position: relative;
-	width: 8.5rem;
-	height: 3rem;
-	&:hover {
-		.btnContent {
-			opacity: 0;
-		}
-		.left {
-			border-top-left-radius: 1.5rem;
-			border-bottom-left-radius: 1.5rem;
-			border-top-right-radius: 0.5rem;
-			transform: rotate(45deg);
-			top: 0.75rem;
-			left: 0.5rem;
-		}
-		.right {
-			border-top-right-radius: 1.5rem;
-			border-bottom-right-radius: 1.5rem;
-			border-top-left-radius: 0.5rem;
-			transform: rotate(-45deg);
-			top: 0.75rem;
-			right: 0.5rem;
-		}
-	}
+    background: none;
+    border: none;
+    position: relative;
+    width: 8.5rem;
+    height: 3rem;
+
+    &:hover {
+        .btnContent {
+            opacity: 0;
+        }
+
+        .left {
+            border-top-left-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+            border-top-right-radius: 0.5rem;
+            transform: rotate(45deg);
+            top: 0.75rem;
+            left: 0.5rem;
+        }
+
+        .right {
+            border-top-right-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            border-top-left-radius: 0.5rem;
+            transform: rotate(-45deg);
+            top: 0.75rem;
+            right: 0.5rem;
+        }
+    }
 }
 
 .left,
 .right,
 .btnContent {
-	transition: 0.25s ease-in-out all;
-	cursor: pointer;
+    transition: 0.25s ease-in-out all;
+    cursor: pointer;
 }
 
 .left {
-	background: #e65c54;
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 0;
-	bottom: 0;
-	z-index: 50;
-	transform-origin: bottom right;
-	border-top-left-radius: 0.5rem;
-	border-bottom-left-radius: 0.5rem;
+    background: #e65c54;
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    transform-origin: bottom right;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 
 .right {
-	background: #e65c54;
-	position: absolute;
-	right: 0;
-	left: 50%;
-	top: 0;
-	bottom: 0;
-	z-index: 50;
-	transform-origin: bottom left;
-	border-top-right-radius: 0.5rem;
-	border-bottom-right-radius: 0.5rem;
+    background: #e65c54;
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    transform-origin: bottom left;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .btnContent {
-	color: #b8e4c4;
-	position: absolute;
-	z-index: 100;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: bolder;
+    color: #b8e4c4;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
 }
 
 
 /************************ Menu Content ***************************/
-.menuContainer{
+.menuContainer {
     display: grid;
     grid-template-columns: repeat(2, 40%);
     justify-content: center;
@@ -224,7 +229,7 @@ body {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-.itemDiv{
+.itemDiv {
     height: 210px;
     width: 290px;
     background-color: #faada9; // f7f2aa
@@ -232,13 +237,14 @@ body {
     margin: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: #f7f2aa;
     }
 }
 
 //Menu items
-.iconDiv{
+.iconDiv {
     display: flex;
     justify-content: center;
     height: 90px;
@@ -246,25 +252,28 @@ body {
 }
 
 //Description
-.itemContent{
+.itemContent {
     text-align: center;
-}   
-.menuTitleHeader{
+}
+
+.menuTitleHeader {
     margin: 0;
 }
-.itemDescription{
+
+.itemDescription {
     margin: auto;
     font-size: 17px;
     width: 250px;
 }
 
 /************************ Contact Content ***************************/
-.contactSection{
+.contactSection {
     display: flex;
     height: 90vh;
 }
-.contactContainer{
-    background-color: #fc9490;
+
+.contactContainer {
+    background-color: #f07c76;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,12 +284,39 @@ body {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-.contactForm{
+.contactForm {
+    display: flex;
+    flex-direction: column;
     width: 360px;
     height: 480px;
     margin: 45px;
-    background-color: #f3f0d1;
+    background-color: #fdb5b3;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     opacity: .9;
+}
+
+#phone,
+#address {
+    // Icon
+    width: 60px;
+    height: 60px;
+    margin: 18px;
+    margin-left: 35px;
+}
+
+.phone {
+    // Icon and context container
+    display: flex;
+    margin-top: 22px;
+}
+
+.address {
+    display: flex;
+}
+
+.formContext {
+    font-size: 38px;
+    height: 16px;
+    margin-left: 5px;
 }
