@@ -264,14 +264,23 @@ body {
     height: 90vh;
 }
 .contactContainer{
-    background-color: #56f781;
+    background-color: #fc9490;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 700px;
-    width: 950px;
+    width: 970px;
     margin: auto;
-    opacity: .7;
     border-radius: 10px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contactForm{
+    width: 360px;
+    height: 480px;
+    margin: 45px;
+    background-color: #f3f0d1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: .9;
 }
