@@ -320,3 +320,42 @@ body {
     height: 16px;
     margin-left: 5px;
 }
+
+.attrib {
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    width: 420px;
+}
+
+.attribs {
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+}
+
+.hoursInfoDiv {
+    background-color: #a5e0eb;
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 4px;
+    height: 210px;
+    margin-top: 6px;
+    opacity: .9;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hoursInfo {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+.hours {
+    list-style-type: none;
+    word-spacing: 2px;
+}
